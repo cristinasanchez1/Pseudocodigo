@@ -1,6 +1,6 @@
 Algoritmo Pensar_número
 	
-	numero_secreto<-(aleatorio 10)
+	numero_secreto=aleatorio(1,10)
 	Escribir "Voy a pensar un número (del 1 al 10) y tendrás que averiguar cúal es"
 	Escribir "¡Vamos allá!"
 	Leer numero
