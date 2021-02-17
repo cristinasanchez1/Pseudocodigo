@@ -1,20 +1,23 @@
 Algoritmo Contar_ocurrencias
 	
-	Definir frase1, caracter Como Caracter
-	Definir posicion, contcaracter Como Entero
-	contcaracter<-0
 	Escribir "Dime una frase" 
 	Leer frase1
-	Repetir
 	Escribir "Dime que carácter quieres que te digamos las veces que aparece"
 	Leer caracter
-	Hasta que Longitud(caracter)=1
 	
-	Para posicion=0 hasta Longitud(frase1) -1 Hacer
-		Si Subcadena(frase1,posicion,posicion)=caracter Entonces
+	Si Minusculas(frase1)=frase1
+		
+	FinSi
+	contcaracter<-0
+	
+	Para x<-1 hasta Longitud(frase1) Hacer
+		Para i<-1 hasta Longitud(caracter) Hacer
+		Si Subcadena(frase1,x,x)=Subcadena(caracter,i,i) Entonces
 			contcaracter=contcaracter+1
 		FinSi
+		FinPara
 	FinPara
+	
 	Escribir "En la frase " frase1 " aparecen " contcaracter " veces el carácter " caracter
 	
 FinAlgoritmo
